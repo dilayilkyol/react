@@ -7,7 +7,7 @@ body {
 }
 
 .nav {
-    background-color: white;
+    background-image: linear-gradient(to right   , white 1%, orange 50%, rgb(244, 68, 97) 70%);
     color: black;
     display: flex;
     justify-content: space-between;
@@ -37,11 +37,16 @@ body {
     padding: .25rem;
 }
 
-.nav li.active{
-    background-color: #e7adad;
+.nav li {
+    color: white;
 }
-.nav li:hover{
-    background-color: #cb9393;
+
+.nav li.active{
+    background-image: radial-gradient(ellipse, orange 5%, rgb(244, 68, 97) 85%);
+}
+.nav li:hover{ 
+    background-color: rgb(244, 68, 97);
+    color: black;
 }
 
 .hr {

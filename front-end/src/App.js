@@ -13,7 +13,6 @@ function App() {
   return (
     <>
     <Navbar />
-    <hr></hr>
     <div className="container">
       <Router>
         <Routes>
