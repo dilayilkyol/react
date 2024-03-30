@@ -9,6 +9,7 @@ export default function Home() {
     setIsModalOpen(true);
   };
 
+
   return (
     <>
       {/* büyük resim ve konum  */}

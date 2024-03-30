@@ -18,6 +18,16 @@ body {
     width: 100%;
 }
 
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: stretch;
+    z-index: 99;
+    
+}
+
 .site-title {
     font-size: 2rem;
 }
@@ -73,7 +83,7 @@ img {
     margin-right: auto;
     width: 90%;
     height: 150%;
-    margin-top: 2rem;
+    margin-top: 6rem;
 }
 
 .info {
