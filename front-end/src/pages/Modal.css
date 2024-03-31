@@ -1,0 +1,388 @@
+.bABA-DW {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    box-sizing: border-box;
+    display: block;
+}
+
+.fillScreen {
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    pointer-events: none !important;
+    box-sizing: border-box;
+}
+
+#opacity1 {
+    transition: opacity 225ms ease 0s;
+    opacity: 1;
+}
+
+.overlayPos {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.overlayContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.overlayContent {
+    position: relative;
+    z-index: 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+.overlayLayer {
+    position: absolute;
+    z-index: 0;
+    background-color: rgb(25, 25, 25);
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+    pointer-events: initial;
+    transition: all 0.3s ease-in-out 0s;
+    box-sizing: border-box;
+    display: block;
+}
+
+.modalFillScreen {
+    transition: transform 225ms ease-in-out 0s, opacity 225ms linear 0s;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px) scale(1);
+}
+
+.dataPrism {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modalContainer {
+    position: relative;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+    min-height: 0px;
+    max-height: calc(-32px + 100vh);
+    max-width: 560px;
+    width: calc(-32px + 100vw);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    outline: none;
+    bottom: 0px;
+}
+
+.VisuallyHiddenText {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.ModalCloseButtonContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+}
+
+.StyledButtonRoot {
+    position: relative;
+    max-width: 100%;
+    margin: 0px;
+    display: inline-flex;
+    min-height: 40px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    user-select: none;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: transparent 0px 0px 0px 1px inset;
+    color: rgb(73, 73, 73);
+    height: 40px;
+    width: 40px;
+    padding: 0px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.StyledInlineSvg {
+    flex-shrink: 0;
+    width: 24;
+    height: 24;
+    fill: none;
+}
+
+.ModalContentContainer {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    overflow: auto;
+    z-index: 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+.styledInset {
+    max-width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.dhXcl {
+    max-width: 100%;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.gNWMJn {
+    font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.01ch;
+    text-transform: none;
+    color: rgb(25, 25, 25);
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    font-variant-ligatures: no-common-ligatures;
+}
+
+.Stack_StyledStack {
+    max-width: 100%;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.iAOYpG {
+    display: flex;
+    flex-flow: wrap;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.modalExp {
+    font-size: 14px;
+    font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0ch;
+    text-transform: none;
+    color: rgb(73, 73, 73);
+    text-align: left;
+    margin: 0px;
+    padding-top: 2rem;
+    display: block;
+    font-variant-ligatures: no-common-ligatures;
+}
+
+.modalContent {
+    padding: 0px 16px 16px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.stackChildren {
+    max-width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.gxDQcB {
+    position: relative;
+    min-height: 0px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.modalimg {
+    min-width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+}
+
+.itemBodyImage {
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.ebsaPM {
+    background-color: rgb(247, 247, 247);
+    overflow: hidden;
+    max-height: 290px;
+    position: relative;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.optimizedImageModal {
+    position: relative;
+    padding-bottom: calc(56%);
+    height: auto;
+    box-sizing: border-box;
+    display: block;
+}
+
+.modal-img1 {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.optionListSalad {
+    max-width: 100%;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.optionAdd {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.stackChildrenOption {
+    max-width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.optionAddTitle {
+    font-size: 16px;
+    font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.04ch;
+    text-transform: none;
+    color: rgb(25, 25, 25);
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    font-variant-ligatures: no-common-ligatures;
+} 
+
+.optionInlineChild {
+    max-width: 100%;
+    display: flex;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.liPaHq {
+    box-sizing: border-box;
+}
+
+.optionalStyled {
+    font-size: 12px;
+    font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0ch;
+    text-transform: none;
+    color: rgb(118, 118, 118);
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    font-variant-ligatures: no-common-ligatures;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.extraIng {
+    width: 100%;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+}
+
+.togleContainer {
+    display: flex;
+    user-select: none;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.inlineChildTogle {
+    max-width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.inputContainer {
+    height: 24px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.ToggleInput {
+    display: flex;
+    flex-shrink: 0;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgb(214, 214, 214);
+    border-radius: 4px;
+    appearance: none;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    outline: none;
+    margin: 0px;
+    transition: all 0.2s ease-in-out 0s;
+    cursor: pointer;
+}
