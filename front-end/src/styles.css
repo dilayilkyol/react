@@ -190,10 +190,10 @@ img {
 }
 
 .part1 {
-    inset: 0px;
+    /* inset: 0px;
     position: absolute;
     box-sizing: border-box;
-    display: block;
+    display: block; */
 }
 
 .other1{

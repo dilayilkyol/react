@@ -1,6 +1,8 @@
 import "../styles.css"
 import Modal from './Modal';
+import Card from '../Components/Card/Card'
 import React, { useState } from 'react';
+import Section from "../Components/Card/Section/Section";
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -81,237 +83,11 @@ export default function Home() {
       </div>
 
       {/* lunch part */}
-      <div class="genel">
-        <div class="lunch-title">
-          <h3>Lunch</h3>
-        </div>
+      {['Lunch','Dinner', 'Drink'].map((title) => {
+        return <Section title={title} />
+      })}
 
-        <div class="one">
-          <div class="part1">
-
-            <div className="other1" role="button" tabIndex="0" onClick={handleOther1Click}>
-              <div className="firstboxDot ">
-                <div className="firstbox">
-                  <div data-anchor-id="menuItem" data-item-id="1" className="firstItem">
-                    <div aria-label="Chicken Seacer Salad" role="button" tabIndex="0" className="saladbox"></div>
-                    <div className="sc62-0">
-                      <div data-test-id="GenericItemCard" className="itemCard">
-                        <div className="stackStyle">
-                          <div className="title">
-                            <h3 display="block" data-telemetry-id="storeMenuItem.title" color="TextPrimary" overflow="truncate" className="titleStyle">Chicken Caesar Salad</h3>
-                          </div>
-                        </div>
-                        <div className="stackStyle">
-                          <span display="block" data-telemetry-id="storeMenuItem.subtitle" color="TextTertiary" overflow="truncate" className="exStyle">
-                            Romaine lettuce, chicken, French bread, parmesan cheese, anchovies, yogurt then
-                            a few more food staples like garlic, olive oil, mayonnaise
-                          </span>
-                        </div>
-                        <div className="inlineChild">
-                          <div className="stackStyle">
-                            <div data-test-id="formatted-dynamic-string" className="inlineChild">
-                              <span className="cost">
-                                <div className="inlineChild-etc">
-                                  <span overflow="truncate" display="block" data-anchor-id="StoreMenuItemPrice" className="costStyle">$15.50</span>
-                                </div>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="sc62-9">
-                      <button shape="Pill" size="12" kind="BUTTON/PLAIN" aria-label="Add item to cart" data-testid="quick-add-button" type="button" className="buttonStyle">
-                        <span kind="BUTTON/PLAIN" className="insetStyle">
-                          <span className="inlineChildAdd">
-                            <span className="mainContent">
-                              <span overflow="truncate" display="block" className="textElement">
-                                <div className="textDiv">
-                                  <span overflow="normal" display="block" className="textElementStyle">Add</span>
-                                </div>
-                              </span>
-                            </span>
-                          </span>
-                        </span>
-                      </button>
-                    </div>
-                    <div className="fd2"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <Modal isOpen={isModalOpen} onClose={(closeModal) => setIsModalOpen(false)} />
-
-            <div class="other2">
-              <div class="firstboxDot" >
-                <div class="firstbox">
-                  <div data-anchor-id="menuItem" data-item-id="1" class="firstItem">
-                    <div aria-label="Chicken Seacer Salad" role="button" tabindex="0" class="saladbox"></div>
-                    <div class="sc62-0">
-                      <div data-test-id="GenericItemCard" class="itemCard">
-                        <div class="stackStyle">
-                          <div class="title">
-                            <h3 display="block" data-telemetry-id="storeMenuItem.title" color="TextPrimary"
-                              overflow="truncate" class="titleStyle">Fried Chicken Salad</h3>
-                          </div>
-                        </div>
-                        <div class="stackStyle">
-                          <span display="block" data-telemetry-id="storeMenuItem.subtitle" color="TextTertiary"
-                            overflow="truncate" class="exStyle">
-                            Jalapeno, coleslaw, butter lettuce, garlic aioli, fried chicken</span>
-                        </div>
-                        <div class="inlineChild">
-                          <div class="stackStyle">
-                            <div data-test-id="formatted-dynamic-string" class="inlineChild">
-                              <span class="cost">
-                                <div class="inlineChild-etc">
-                                  <span overflow="truncate" display="block" data-anchor-id="StoreMenuItemPrice"
-                                    class="costStyle">$15.50</span>
-                                </div>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="sc62-9">
-                      <button shape="Pill" size="12" kind="BUTTON/PLAIN" aria-label="Add item to cart"
-                        data-testid="quick-add-button" type="button" class="buttonStyle">
-                        <span kind="BUTTON/PLAIN" class="insetStyle">
-                          <span class="inlineChildAdd">
-                            <span class="mainContent">
-                              <span overflow="truncate" display="block" class="textElement">
-                                <div class="textDiv">
-                                  <span overflow="normal" display="block" class="textElementStyle">Add</span>
-                                </div>
-                              </span>
-                            </span>
-                          </span>
-                        </span>
-                      </button>
-                    </div>
-                    <div class="fd2">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="other3">
-              <div class="firstboxDot">
-                <div class="firstbox">
-                  <div data-anchor-id="menuItem" data-item-id="1" class="firstItem">
-                    <div aria-label="Chicken Seacer Salad" role="button" tabindex="0" class="saladbox"></div>
-                    <div class="sc62-0">
-                      <div data-test-id="GenericItemCard" class="itemCard">
-                        <div class="stackStyle">
-                          <div class="title">
-                            <h3 display="block" data-telemetry-id="storeMenuItem.title" color="TextPrimary"
-                              overflow="truncate" class="titleStyle">Burger Menu</h3>
-                          </div>
-                        </div>
-                        <div class="stackStyle">
-                          <span display="block" data-telemetry-id="storeMenuItem.subtitle" color="TextTertiary"
-                            overflow="truncate" class="exStyle">
-                            lettuce, tomato, garlic mayonnaise, barbecue meatballs with french fries</span>
-                        </div>
-                        <div class="inlineChild">
-                          <div class="stackStyle">
-                            <div data-test-id="formatted-dynamic-string" class="inlineChild">
-                              <span class="cost">
-                                <div class="inlineChild-etc">
-                                  <span overflow="truncate" display="block" data-anchor-id="StoreMenuItemPrice"
-                                    class="costStyle">$14.50</span>
-                                </div>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="sc62-9">
-                      <button shape="Pill" size="12" kind="BUTTON/PLAIN" aria-label="Add item to cart"
-                        data-testid="quick-add-button" type="button" class="buttonStyle">
-                        <span kind="BUTTON/PLAIN" class="insetStyle">
-                          <span class="inlineChildAdd">
-                            <span class="mainContent">
-                              <span overflow="truncate" display="block" class="textElement">
-                                <div class="textDiv">
-                                  <span overflow="normal" display="block" class="textElementStyle">Add</span>
-                                </div>
-                              </span>
-                            </span>
-                          </span>
-                        </span>
-                      </button>
-                    </div>
-                    <div class="fd2">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="other4">
-              <div class="firstboxDot">
-                <div class="firstbox">
-                  <div data-anchor-id="menuItem" data-item-id="1" class="firstItem">
-                    <div aria-label="Chicken Seacer Salad" role="button" tabindex="0" class="saladbox"></div>
-                    <div class="sc62-0">
-                      <div data-test-id="GenericItemCard" class="itemCard">
-                        <div class="stackStyle">
-                          <div class="title">
-                            <h3 display="block" data-telemetry-id="storeMenuItem.title" color="TextPrimary"
-                              overflow="truncate" class="titleStyle">Chicken Burger Menu</h3>
-                          </div>
-                        </div>
-                        <div class="stackStyle">
-                          <span display="block" data-telemetry-id="storeMenuItem.subtitle" color="TextTertiary"
-                            overflow="truncate" class="exStyle">
-                            lettuce, tomato, garlic mayonnaise, fried chicken with french fries</span>
-                        </div>
-                        <div class="inlineChild">
-                          <div class="stackStyle">
-                            <div data-test-id="formatted-dynamic-string" class="inlineChild">
-                              <span class="cost">
-                                <div class="inlineChild-etc">
-                                  <span overflow="truncate" display="block" data-anchor-id="StoreMenuItemPrice"
-                                    class="costStyle">$12.50</span>
-                                </div>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="sc62-9">
-                      <button shape="Pill" size="12" kind="BUTTON/PLAIN" aria-label="Add item to cart"
-                        data-testid="quick-add-button" type="button" class="buttonStyle">
-                        <span kind="BUTTON/PLAIN" class="insetStyle">
-                          <span class="inlineChildAdd">
-                            <span class="mainContent">
-                              <span overflow="truncate" display="block" class="textElement">
-                                <div class="textDiv">
-                                  <span overflow="normal" display="block" class="textElementStyle">Add</span>
-                                </div>
-                              </span>
-                            </span>
-                          </span>
-                        </span>
-                      </button>
-                    </div>
-                    <div class="fd2">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
+{/* 
       <div class="genel">
         <div class="lunch-title">
           <h3>Dinner</h3>
@@ -972,7 +748,7 @@ export default function Home() {
 
           </div>
         </div>
-      </div>
+      </div> */}
 
 
     </>
