@@ -1,6 +1,6 @@
 import "../styles.css"
 import Modal from './Modal';
-import Card from '../Components/Card/Card'
+
 import React, { useState } from 'react';
 import Section from "../Components/Card/Section/Section";
 
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
 
           <div class="col-md-auto" id="col3">
-            <img src="/contentimg/desert.jpeg" alt="" className="content-img" />
+            <img src="/contentimg/dessert.jpeg" alt="" className="content-img" />
             <button className="button">
               Desert
             </button>
@@ -83,11 +83,13 @@ export default function Home() {
       </div>
 
       {/* lunch part */}
-      {['Lunch','Dinner', 'Drink'].map((title) => {
+      {['Lunch','Dinner','Dessert', 'Drink'].map((title) => {
         return <Section title={title} />
       })}
 
-{/* 
+      
+
+      {/* 
       <div class="genel">
         <div class="lunch-title">
           <h3>Dinner</h3>

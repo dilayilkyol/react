@@ -2,8 +2,8 @@ import React from 'react';
 import Modal from '../../pages/Modal'
 import "./Card.css"
 
-const Card = ({ title, description, price }) => {
-
+const Card = ({ title, description, price, }) => {
+  
   return (
     <>
       <div className='card-container'>
@@ -24,13 +24,11 @@ const Card = ({ title, description, price }) => {
             </div>
           </div>
         </div>
-        <img src="/contentimg/lunch.jpeg" alt="" className="card-image" >
-          
-        </img>
+
+        <img src={`/itemimg/${title.toLowerCase().replace(/\s+/g, '-')}.jpeg`} alt="" className="card-image"/>
       </div>
     </>
   );
 };
 
 export default Card;
-
