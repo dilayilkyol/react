@@ -336,6 +336,7 @@ img {
     white-space: normal;
     box-sizing: border-box;
     text-align: left;
+    max-width: 400px;
 }
 
 .inlineChild {

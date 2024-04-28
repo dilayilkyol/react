@@ -5,17 +5,17 @@ const lunchItems = [
       price: "16.50"
   },
   {
-      title:  "Fried Chicken Sandwich ",
+      title:  "Fried Chicken Sandwich",
       description: "Jalapeno, coleslaw, butter lettuce, garlic aioli, fried chicken",
       price: "14.50"
    },
    {
-      title:  "Burger Menu ",
+      title:  "Burger Menu",
       description: "lettuce, tomato, garlic mayonnaise, barbecue meatballs with french fries",
       price: "16.50"
    },
    {
-      title:  "Chicken Burger Menu ",
+      title:  "Chicken Burger Menu",
       description: "lettuce, tomato, garlic mayonnaise, fried chicken with french fries",
       price: "15.50"
    }
