@@ -1,5 +1,4 @@
 import React from 'react';
-import Modal from '../../pages/Modal'
 import "./Card.css"
 
 const Card = ({ title, description, price, }) => {
@@ -12,11 +11,11 @@ const Card = ({ title, description, price, }) => {
             <div className="title">
               <h3 display="block" data-telemetry-id="storeMenuItem.title" color="TextPrimary" overflow="truncate" className="titleStyle">{title}</h3>
             </div>
-            <span display="block" data-telemetry-id="storeMenuItem.subtitle" color="TextTertiary" overflow="truncate" className="exStyle">
+            <span display="block" data-telemetry-id="storeMenuItem.subtitle" color="TextTertiary" overflow="truncate" className="description-style">
               {description}
             </span>
 
-            <span overflow="truncate" display="block" data-anchor-id="StoreMenuItemPrice" className="costStyle">${price}</span>
+            <span overflow="truncate" display="block" data-anchor-id="StoreMenuItemPrice" className="cost-style">${price}</span>
           </div>
           <div className="card-add">
             <div className='card-wrapper'>

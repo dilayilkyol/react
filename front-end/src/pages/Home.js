@@ -1,20 +1,14 @@
 import "../styles.css"
-import Modal from './Modal';
-
-import React, { useState } from 'react';
+import React from 'react';
 import Section from "../Components/Card/Section/Section";
+import Meal from "../Components/Meal/Meal";
 
 export default function Home() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleOther1Click = () => {
-    setIsModalOpen(true);
-  };
-
+  
 
   return (
     <>
-      {/* büyük resim ve konum  */}
+      {/* big img and location  */}
       <div className="edge">
         <header>
 
@@ -42,53 +36,19 @@ export default function Home() {
       </div>
 
       <br></br>
-      <br></br>
 
       <span className="discover">
         Discover new tastes
       </span>
 
       {/* menü */}
-      <div class="container content">
-        <div class="row firstRow">
-          <div class="col-md-auto" id="col1">
-            <img src="/contentimg/lunch.jpeg" alt="" className="content-img" />
-            <button className="button">
-              Lunch
-            </button>
-          </div>
+      <Meal />
 
-          <div class="col-md-auto" >
-            <img src="/contentimg/dinner.jpeg" alt="" className="content-img" />
-            <button className="button">
-              Dinner
-            </button>
-          </div>
-
-          <div class="col-md-auto" id="col3">
-            <img src="/contentimg/dessert.jpeg" alt="" className="content-img" />
-            <button className="button">
-              Desert
-            </button>
-          </div>
-
-          <div class="col-md-auto" id="col4">
-            <img src="/contentimg/drink.jpeg" alt="" className="content-img" />
-            <button className="button">
-              Drinks
-            </button>
-          </div>
-
-        </div>
-      </div>
-
-      {/* lunch part */}
       {['Lunch','Dinner','Dessert', 'Drink'].map((title) => {
         return <Section title={title} />
       })}
 
       
-
       {/* 
       <div class="genel">
         <div class="lunch-title">
