@@ -2,8 +2,6 @@ import React from 'react';
 import './Meal.css';
 import mealData from '../../data/meal';
 
-
-
 const Meal = ({ onMealSelect }) => {
   return (
     <div className="meal-container">
