@@ -48,7 +48,6 @@
         color: rgb(118, 118, 118);
         margin: 0px;
         padding: 0px;
-
         max-width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -57,7 +56,7 @@
         -webkit-box-orient: vertical;
         box-sizing: border-box;
         text-align: left;
-        max-width: 400px;
+        max-width: 60%;
     }
 
     .cost-style {

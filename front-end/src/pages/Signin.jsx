@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import axios from 'axios';
+import './signin.css'
 
 export default function SignIn() {
   const [isSignUp, setIsSignUp] = useState(false);
@@ -32,7 +33,7 @@ export default function SignIn() {
   const handleSignUp = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/signup', {
+      const response = await axios.post('http://localhost:4000/api/auth/signup', {
         username,
         email,
         password
@@ -46,7 +47,7 @@ export default function SignIn() {
   const handleSignIn = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/signin', {
+      const response = await axios.post('http://localhost:4000/api/auth/signin', {
         email,
         password
       });
