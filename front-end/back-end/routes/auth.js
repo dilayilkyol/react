@@ -4,12 +4,10 @@ const bcrypt = require('bcrypt');
 const User = require('../models/User');
 
 router.get('/', async (req, res) => {
-  console.log(req.body)
   res.send('Hello World!');
 });
 
 router.post('/signup', async (req, res) => {
-  console.log(req.body)
   try {
     const { username, email, password } = req.body;
     const hashedPassword = await bcrypt.hash(password, 10);
@@ -22,7 +20,6 @@ router.post('/signup', async (req, res) => {
 });
 
 router.post('/signin', async (req, res) => {
-  console.log(req.body)
   try {
     const { email, password } = req.body;
     const user = await User.findOne({ email });

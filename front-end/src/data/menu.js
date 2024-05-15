@@ -51,15 +51,15 @@ const dessertItems = [
    },
    {
       title: "Brownie",
-      price: "14.50"
+      price: "4.50"
    },
    {
       title: "Chocolate Cookie",
-      price: "16.50"
+      price: "4.50"
    },
    {
       title: "Magnolia",
-      price: "20.50"
+      price: "6.50"
    }
 ];
 
