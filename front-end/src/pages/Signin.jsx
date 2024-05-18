@@ -3,21 +3,15 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import './signin.css'
-<<<<<<< HEAD:src/pages/Signin.jsx
 import { useNavigate  } from 'react-router-dom';
-=======
->>>>>>> fb7d49178a641a10363098e612b6816eb3b94c61:front-end/src/pages/Signin.jsx
 
 export default function SignIn() {
   const [isSignUp, setIsSignUp] = useState(false);
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-<<<<<<< HEAD:src/pages/Signin.jsx
 
   let navigate = useNavigate();
-=======
->>>>>>> fb7d49178a641a10363098e612b6816eb3b94c61:front-end/src/pages/Signin.jsx
 
   const handleSignUpClick = () => {
     setIsSignUp(true);
@@ -49,10 +43,7 @@ export default function SignIn() {
         password
       });
       console.log(response.data);
-<<<<<<< HEAD:src/pages/Signin.jsx
       navigate('/');
-=======
->>>>>>> fb7d49178a641a10363098e612b6816eb3b94c61:front-end/src/pages/Signin.jsx
     } catch (error) {
       console.error(error);
     }
@@ -66,19 +57,12 @@ export default function SignIn() {
         password
       });
       console.log(response.data);
-<<<<<<< HEAD:src/pages/Signin.jsx
       navigate('/');
-=======
->>>>>>> fb7d49178a641a10363098e612b6816eb3b94c61:front-end/src/pages/Signin.jsx
     } catch (error) {
       console.error(error);
     }
   };
-<<<<<<< HEAD:src/pages/Signin.jsx
 console.log('isSignUp', isSignUp)
-=======
-
->>>>>>> fb7d49178a641a10363098e612b6816eb3b94c61:front-end/src/pages/Signin.jsx
   return (
     <div className="wrapper">
       <div className="form-box login">
