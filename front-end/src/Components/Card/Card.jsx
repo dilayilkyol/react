@@ -1,11 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./Card.css"
+import ModalComponent from '../../pages/Modal';
 
 const Card = ({ title, description, price, }) => {
+
+  const[isOpen, setIsOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsOpen(!isOpen)
+  }
+
   
   return (
     <>
-      <div className='card-container'>
+      <div className='card-container' onClick={toggleModal}>
         <div className='card-container-inner'>
           <div className='card-content'>
             <div className="title">
@@ -26,6 +34,14 @@ const Card = ({ title, description, price, }) => {
 
         <img src={`/itemimg/${title.toLowerCase().replace(/\s+/g, '-')}.jpeg`} alt="" className="card-image"/>
       </div>
+      <ModalComponent modalIsOpen={isOpen} closeModal={toggleModal}>
+      <div>
+        <h3>{title}</h3>
+        <span>{description}</span>
+        <img className={'modalImg'} src={`/itemimg/${title.toLowerCase().replace(/\s+/g, '-')}-modal.jpeg`} alt=""/>
+        <div className={'addToCart'}><span>Add to Cart</span></div>
+      </div>
+      </ModalComponent>
     </>
   );
 };
