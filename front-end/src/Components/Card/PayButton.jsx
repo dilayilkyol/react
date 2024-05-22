@@ -8,7 +8,7 @@ const PayButton = () => {
 
     return (
         <>
-        <button onClick={() => handleCheckOut()}>Check Out</button>
+        <div onClick={() => handleCheckOut()}, className={'addToCart'}><span>Add to Cart</span></div>
         </>
     );
 }
