@@ -24,7 +24,7 @@ axios.get('http://localhost:4000/products')
   });
 
   },[])
-
+ 
 
   return (
     <div className="section-container">
