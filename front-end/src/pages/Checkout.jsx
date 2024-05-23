@@ -23,7 +23,7 @@ const Cart = ({addToCart, card}) => {
                 );
             })}
         </div>
-        <PayButton />
+        <PayButton cartItems={card} />
     </div>
   );
 };

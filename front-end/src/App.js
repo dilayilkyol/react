@@ -5,6 +5,7 @@ import Navbar from "./pages/Navbar";
 import Signin from "./pages/Signin";
 import Home from "./pages/Home";
 import Checkout from "./pages/Checkout";
+import CheckoutSuccess from "./pages/CheckoutSuccess";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
@@ -33,6 +34,7 @@ function App() {
             <Route path="/" element={<Home addToCart={addToCart}/>} />
             <Route path="/signin" element={<Signin />} />
             <Route path="/cart" element={<Checkout addToCart={addToCart} card={card}/>} />
+            <Route path="/checkout-success" element={<CheckoutSuccess />} />
           </Routes>
         </div>
       </Router>
