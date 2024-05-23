@@ -6,9 +6,13 @@ export default function Navbar() {
             <nav className="nav">
                 <a href="/" className="site-title">Logo</a>
                 <ul>
+                <li className="active">
+                        <a href="/cart">Check Out</a>
+                    </li>
                     <li className="active">
                         <a href="/signin">Sign in / Sign Up</a>
                     </li>
+
 
                 </ul>
             </nav>

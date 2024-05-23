@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import "./Card.css"
 import ModalComponent from '../../pages/Modal';
 
-const Card = ({ title, description, price, }) => {
+const Card = ({ title, description, price, addToCart }) => {
 
   const[isOpen, setIsOpen] = useState(false);
 
@@ -39,7 +39,7 @@ const Card = ({ title, description, price, }) => {
         <h3>{title}</h3>
         <span>{description}</span>
         <img className={'modalImg'} src={`/itemimg/${title.toLowerCase().replace(/\s+/g, '-')}-modal.jpeg`} alt=""/>
-        <div className={'addToCart'}><span>Add to Cart</span></div>
+        <div className={'addToCart'} onClick={() => addToCart({title:title, description:description, quantitiy:1})}><span>Add to Cart</span></div>
       </div>
       </ModalComponent>
     </>

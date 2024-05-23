@@ -3,7 +3,7 @@ import Card from '../Card';
 import "./Section.css";
 import axios from 'axios'
 
-const Section = ({ title }) => {
+const Section = ({ title, addToCart }) => {
   const  [products, setProducts] = useState([])
   useEffect(()=> {
     
@@ -40,6 +40,7 @@ axios.get('http://localhost:4000/products')
             price={item.price}
             description={item.description}
             image={`/itemimg/${item.title.toLowerCase().replace(/\s+/g, '-')}.jpeg`}
+            addToCart={addToCart}
           />
         ))}
       </div>

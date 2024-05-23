@@ -3,7 +3,7 @@ import React from 'react';
 import Section from "../Components/Card/Section/Section";
 import Meal from "../Components/Meal/Meal";
 
-export default function Home() {
+export default function Home({addToCart}) {
   
 
   return (
@@ -45,7 +45,7 @@ export default function Home() {
       <Meal />
 
       {['Lunch','Dinner','Dessert', 'Drink'].map((title) => {
-        return <Section title={title} />
+        return <Section title={title} addToCart={addToCart}/>
       })}
 
     </>
