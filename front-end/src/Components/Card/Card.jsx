@@ -39,7 +39,7 @@ const Card = ({ title, description, price, addToCart }) => {
         <h3>{title}</h3>
         <span>{description}</span>
         <img className={'modalImg'} src={`/itemimg/${title.toLowerCase().replace(/\s+/g, '-')}-modal.jpeg`} alt=""/>
-        <div className={'addToCart'} onClick={() => addToCart({title:title, description:description, quantitiy:1})}><span>Add to Cart</span></div>
+        <div className={'addToCart'} onClick={() => addToCart({title:title, description:description, quantity:1, price:Number(price)})}><span>Add to Cart</span></div>
       </div>
       </ModalComponent>
     </>

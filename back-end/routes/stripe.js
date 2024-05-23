@@ -8,7 +8,7 @@ const stripe = Stripe(process.env.STRIPE_KEY)
 const router = express.Router()
 
 router.post('/create-checkout-session', async (req, res) => {
-
+console.log(req.body.cartItems)
     const line_items = req.body.cartItems.map((item) => {
         return {
             price_data: {
@@ -17,7 +17,7 @@ router.post('/create-checkout-session', async (req, res) => {
                   name: item.title,
                   description: item.description,
                   metadata:{
-                    id: item.id
+                    id: 1
                   }
                 },
                 unit_amount: item.price * 100,
@@ -27,7 +27,6 @@ router.post('/create-checkout-session', async (req, res) => {
     });
 
     const session = await stripe.checkout.sessions.create({
-        payment_method_types: ['card'],
         line_items: line_items,
         mode: 'payment',
         success_url: `${process.env.CLIENT_URL}/checkout-success`,

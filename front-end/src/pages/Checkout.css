@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Ana kutu */
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Başlık */
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .checkout-container {
+    border: 1px solid #ccc; 
+  border-radius: 8px; 
+  margin-bottom: 20px;
+  padding: 15px;
+  }
+  /* Her bir ürün kutusu */
+  .checkout-container > div {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  
+  .checkout-container > div h3 {
+    margin: 0 0 10px;
+    color: #333;
+  }
+  
+  .checkout-container > div span {
+    color: #666;
+  }
+  
+  .checkout-containerr > div p {
+    margin: 10px 0;
+  }
+  
+  /* Checkout butonu */
+  .checkout-button {
+    display: block;
+    width: 30%;
+    margin: 20px auto;
+    background-color: rgb(244, 68, 97);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    text-decoration: none;
+    
+    
+  }
+  
+  .checkout-button:hover {
+    background-color: rgb(175, 39, 61);
+  }
