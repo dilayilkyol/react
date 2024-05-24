@@ -26,6 +26,11 @@ body {
     
 }
 
+.logo-navbar {
+    width: 88px;
+    height: auto;
+}
+
 .site-title {
     font-size: 2rem;
 }

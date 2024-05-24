@@ -5,7 +5,7 @@ import axios from 'axios';
 import './signin.css'
 import { useNavigate  } from 'react-router-dom';
 
-export default function SignIn() {
+export default function SignIn({user, updateUser}) {
   const [isSignUp, setIsSignUp] = useState(false);
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -43,6 +43,7 @@ export default function SignIn() {
         password
       });
       console.log(response.data);
+      updateUser(response.data)
       navigate('/');
     } catch (error) {
       console.error(error);
@@ -57,6 +58,7 @@ export default function SignIn() {
         password
       });
       console.log(response.data);
+      updateUser(response.data)
       navigate('/');
     } catch (error) {
       console.error(error);

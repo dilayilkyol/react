@@ -1,5 +1,6 @@
 const express = require("express");
 const Stripe = require("stripe");
+const User = require("../models/User");
 
 require("dotenv").config();
 
@@ -8,7 +9,13 @@ const stripe = Stripe(process.env.STRIPE_KEY)
 const router = express.Router()
 
 router.post('/create-checkout-session', async (req, res) => {
-console.log(req.body.cartItems)
+console.log(req.body.userId)
+const customer = await stripe.customers.create({
+    metadata: {
+      userId: req.body.userId,
+      cart: JSON.stringify(req.body.cartItems),
+    },
+  });
     const line_items = req.body.cartItems.map((item) => {
         return {
             price_data: {
@@ -17,7 +24,7 @@ console.log(req.body.cartItems)
                   name: item.title,
                   description: item.description,
                   metadata:{
-                    id: 1
+                    id: req.body.userId
                   }
                 },
                 unit_amount: item.price * 100,

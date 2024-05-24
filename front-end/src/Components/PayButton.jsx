@@ -1,11 +1,8 @@
 import axios from "axios";
 export const url = "http://localhost:4000/api";
 
-const PayButton = ({ cartItems }) => {
-  const user = {
-    _id: 1
-  }
-
+const PayButton = ({ user, cartItems }) => {
+ 
   const handleCheckout = () => {
     axios
       .post(`${url}/stripe/create-checkout-session`, {

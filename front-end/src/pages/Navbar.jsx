@@ -1,10 +1,14 @@
+import logo from "./logo.svg"
 
 
 export default function Navbar() {
     return (
         <nav className="navbar-container">
             <nav className="nav">
-                <a href="/" className="site-title">Logo</a>
+                <a href="/" className="site-title">
+                <img className="logo-navbar" src={logo} />
+                </a>
+                
                 <ul>
                 <li className="active">
                         <a href="/cart">Check Out</a>

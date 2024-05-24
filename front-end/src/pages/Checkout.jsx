@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import PayButton from "../Components/PayButton"
 import "./Checkout.css";
 
-const Cart = ({addToCart, card}) => {
+const Cart = ({user, addToCart, card}) => {
   // const cart = useSelector((state) => state.cart);
   // const auth = useSelector((state) => state.auth);
 
@@ -27,7 +27,7 @@ const Cart = ({addToCart, card}) => {
                 );
             })}
         </div>
-        <PayButton cartItems={card} />
+        <PayButton user={user} cartItems={card} />
     </div>
   );
 };

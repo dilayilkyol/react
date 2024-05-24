@@ -13,9 +13,9 @@ const Card = ({ title, description, price, addToCart }) => {
   
   return (
     <>
-      <div className='card-container' onClick={toggleModal}>
+      <div className='card-container' >
         <div className='card-container-inner'>
-          <div className='card-content'>
+          <div className='card-content' onClick={toggleModal}>
             <div className="title">
               <h3 display="block" data-telemetry-id="storeMenuItem.title" color="TextPrimary" overflow="truncate" className="titleStyle">{title}</h3>
             </div>
@@ -27,7 +27,7 @@ const Card = ({ title, description, price, addToCart }) => {
           </div>
           <div className="card-add">
             <div className='card-wrapper'>
-              <span className="add-to-cart">Add</span>
+              <span onClick={() => addToCart({title:title, description:description, quantity:1, price:Number(price)})} className="add-to-cart">Add</span>
             </div>
           </div>
         </div>
